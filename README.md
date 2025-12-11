@@ -126,5 +126,10 @@ Here are the features I plan to add in future updates:
       Extend scraping and sentiment processing to NSE/BSE tickers.
 
 ---
+## 📈 Sentiment Analysis Graph
+![Sentiment Graph](images/sentiment_graph.jpg)
+
+*Figure 1: Average sentiment score per stock per day.*
+
 
 
