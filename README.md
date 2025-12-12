@@ -190,9 +190,15 @@ Here are the features I plan to add in future updates:
 ![Sentiment Graph](images/negative_.png) <br>
 *Figure 10: Average sentiment score per stock per day.* <br>
 
+---
+## DataSet Visualization
+Performed sentiment analysis not from web scraping but from a dataset (the author of the dataset is Pratyush Puri on Kaggle https://www.kaggle.com/datasets/pratyushpuri/financial-news-market-events-dataset-2025)
 
+![Sentiment Graph](images/normalized_sentiment_dataset.png) <br>
+*Figure 1: Average normalized sentiment score per stock per day.* <br>
 
-
+![Sentiment Graph](images/treemap_dataset.png) <br>
+*Figure 2: Treemap per stock.* <br>
 
 
 
