@@ -18,7 +18,9 @@ The project was developed on **Kaggle Notebook**.
 - **BeautifulSoup (bs4)**
 - **urllib.request**
 - **NLTK VADER Sentiment Analyzer**
+- **NRC Emotion Lexicon**
 - **Matplotlib**
+- **Plotly Express**
 - **FinViz.com (News Source)**
 
 ---
@@ -63,8 +65,39 @@ All entries were stored in a **Pandas DataFrame**.
 ### 3️⃣ Sentiment scoring
 Using VADER's polarity_scores(), I computed the compound score for each headline and appended it to the DataFrame.
 
-### 5. Visualization
+### 4️⃣ Visualization
 To analyze trends, I grouped sentiment by ticker and date and plotted the results using Matplotlib.
+
+### 5️⃣ Key Visualizations 📊 (Important Graphs)
+
+These graphs provide the core analytical insights of the Stock News Sentiment Project.
+- Normalized Sentiment Bar Chart – Shows each stock’s average sentiment score normalized using Z-score, with error bars reflecting sentiment volatility.
+- Sentiment Heatmap Over Time – Displays how sentiment changes day-by-day for each stock, helping identify trends, spikes, and market reactions.
+- Treemap of Stock Sentiment Strength – A size-based map where larger blocks represent stronger sentiment magnitude (positive or negative), providing a fast visual ranking of which stocks dominate sentiment.
+  
+These three graphs form the primary backbone of sentiment understanding: overall sentiment → volatility → time trends → relative magnitude.
+
+### 📈 Additional Visualizations (Supporting Insights)
+
+These graphs provide deeper NLP-based emotional and linguistic breakdowns:
+<br>
+🟦 Word Clouds
+- Positive Sentiment Word Cloud – Highlights the most frequent optimistic words investors/media use.
+- Negative Sentiment Word Cloud – Shows common negative or fear-driven words.
+
+
+#### Using the NRC Emotion Lexicon (developed by the National Research Council of Canada) to classify the emotional tone of stock-related news headlines.
+The lexicon contains 14,000+ English words, each labeled with one or more of the following 10 emotions:
+anger, anticipation, disgust, fear, joy, negative, positive, sadness, surprise, trust
+By mapping words in news headlines to these emotions, the project generates:
+
+🎭 Emotion Analysis Visuals
+- Emotion Radar Chart (per stock) – Shows emotional distribution (anger, anticipation, trust, etc.) for a single ticker.
+- Emotion Comparison Line Graph – Plots each emotion across all tickers to identify which stock is highest in which emotion category.
+- Emotion Distribution Bar Chart – Side-by-side comparison of emotion counts for each ticker.
+
+These graphs deepen understanding of how the market is talking about the stock, not just whether sentiment is positive or negative.
+
 
 ---
 
@@ -113,23 +146,60 @@ Handling potential blocked requests
 
 Here are the features I plan to add in future updates:
 
-- [ ] **Normalized Sentiment Score**  
+- [x] **Normalized Sentiment Score**  
       Convert raw VADER compound values into a scaled or standardized metric for easier comparison.
 
-- [ ] **Sentiment & Emotion Graphs**  
+- [x] **Sentiment & Emotion Graphs**  
       Add multi-line graphs showing positive/negative/neutral sentiment trends and emotion breakdowns.
 
-- [ ] **Dataset-Based Analysis**  
+- [x] **Dataset-Based Analysis**  
       Instead of only live scraping, add sentiment analysis using uploaded or external datasets for larger sample sizes.
 
 - [ ] **Indian Stock Market Support**  
       Extend scraping and sentiment processing to NSE/BSE tickers.
 
 ---
-## 📈 Sentiment Analysis Graph
-![Sentiment Graph](images/sentiment_graph.jpg)
+## 📈 Sentiment Analysis Graphs
+![Sentiment Graph](images/sentiment_graph.jpg) <br>
+*Figure 1: Average sentiment score per stock per day.* <br>
 
-*Figure 1: Average sentiment score per stock per day.*
+![Sentiment Graph](images/treemap.png) <br>
+*Figure 2: Treemap of sentiments per ticker.* <br>
+
+![Sentiment Graph](images/normalized_sentiment_graph.png) <br>
+*Figure 3: Normalized average sentiment score per stock.* <br>
+
+![Sentiment Graph](images/emotion_distribution.png) <br>
+*Figure 4: Distribution of emotions per stock.* <br>
+
+![Sentiment Graph](images/emotion_strength_comparison.png) <br>
+*Figure 5: Overlapping line graph of emotion strength of stocks.* <br>
+
+![Sentiment Graph](images/sentiment_heatmap.png) <br>
+*Figure 6: Sentiment Heatmap per day per stock.* <br>
+
+![Sentiment Graph](images/radar_chart.png) <br>
+*Figure 7: Average sentiment score per stock per day.* <br>
+
+![Sentiment Graph](images/sentiment_graph.jpg) <br>
+*Figure 8: Average sentiment score per stock per day.* <br>
+
+![Sentiment Graph](images/positive_wordcloud.png) <br>
+*Figure 9: Average sentiment score per stock per day.* <br>
+
+![Sentiment Graph](images/negative_.png) <br>
+*Figure 10: Average sentiment score per stock per day.* <br>
+
+---
+## DataSet Visualization
+Performed sentiment analysis not from web scraping but from a dataset (the author of the dataset is Pratyush Puri on Kaggle https://www.kaggle.com/datasets/pratyushpuri/financial-news-market-events-dataset-2025)
+
+![Sentiment Graph](images/normalized_sentiment_dataset.png) <br>
+*Figure 1: Average normalized sentiment score per stock per day.* <br>
+
+![Sentiment Graph](images/treemap_dataset.png) <br>
+*Figure 2: Treemap per stock.* <br>
+
 
 
 
