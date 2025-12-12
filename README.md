@@ -152,7 +152,7 @@ Here are the features I plan to add in future updates:
 - [x] **Sentiment & Emotion Graphs**  
       Add multi-line graphs showing positive/negative/neutral sentiment trends and emotion breakdowns.
 
-- [ ] **Dataset-Based Analysis**  
+- [x] **Dataset-Based Analysis**  
       Instead of only live scraping, add sentiment analysis using uploaded or external datasets for larger sample sizes.
 
 - [ ] **Indian Stock Market Support**  
