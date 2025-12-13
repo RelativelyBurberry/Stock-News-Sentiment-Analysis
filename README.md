@@ -155,8 +155,10 @@ Here are the features I plan to add in future updates:
 - [x] **Dataset-Based Analysis**  
       Instead of only live scraping, add sentiment analysis using uploaded or external datasets for larger sample sizes.
 
-- [ ] **Indian Stock Market Support**  
+- [x] **Indian Stock Market Support**  
       Extend scraping and sentiment processing to NSE/BSE tickers.
+      However, it is a project in and of itself, and thus deserves a repository of it's own
+      ➡️ [Indian Stock News Sentiment](https://github.com/RelativelyBurberry/Indian-Stock-News-Sentiment-Analysis)
 
 ---
 ## 📈 Sentiment Analysis Graphs
@@ -181,14 +183,11 @@ Here are the features I plan to add in future updates:
 ![Sentiment Graph](images/radar_chart.png) <br>
 *Figure 7: Average sentiment score per stock per day.* <br>
 
-![Sentiment Graph](images/sentiment_graph.jpg) <br>
+![Sentiment Graph](images/positive_wordcloud.png) <br>
 *Figure 8: Average sentiment score per stock per day.* <br>
 
-![Sentiment Graph](images/positive_wordcloud.png) <br>
-*Figure 9: Average sentiment score per stock per day.* <br>
-
 ![Sentiment Graph](images/negative_.png) <br>
-*Figure 10: Average sentiment score per stock per day.* <br>
+*Figure 9: Average sentiment score per stock per day.* <br>
 
 ---
 ## DataSet Visualization
