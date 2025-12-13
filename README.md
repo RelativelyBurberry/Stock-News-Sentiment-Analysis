@@ -155,8 +155,10 @@ Here are the features I plan to add in future updates:
 - [x] **Dataset-Based Analysis**  
       Instead of only live scraping, add sentiment analysis using uploaded or external datasets for larger sample sizes.
 
-- [ ] **Indian Stock Market Support**  
+- [x] **Indian Stock Market Support**  
       Extend scraping and sentiment processing to NSE/BSE tickers.
+      However, it is a project in and of itself, and thus deserves a repository of it's own
+      ➡️ [Indian Stock News Sentiment](https://github.com/RelativelyBurberry/Indian-Stock-News-Sentiment-Analysis)
 
 ---
 ## 📈 Sentiment Analysis Graphs
