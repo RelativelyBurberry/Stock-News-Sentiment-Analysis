@@ -8,6 +8,8 @@ News is scraped from **FinViz**, parsed using **BeautifulSoup**, processed with 
 
 The project was developed on **Kaggle Notebook**.
 
+### Addendent: ➡️ [Indian Stock News Sentiment](https://github.com/RelativelyBurberry/Indian-Stock-News-Sentiment-Analysis)
+
 ---
 
 ## 🛠️ Technologies Used
